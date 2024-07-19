@@ -116,39 +116,39 @@ Thank you for participating in the trial for the Northern Australian Producer Re
 This solution contains a project that integrates multiple services to deliver a robust application. It leverages Azure Web App and Azure Function App for hosting and serverless computing, respectively. Google Maps JavaScript API is used for map functionalities, while SendGrid API handles email communications. The project also uses Power Automate to streamline workflows and interface with OpenAI's ChatGPT for conversational AI capabilities. Additionally, Twilio is utilized to provide SMS notification capabilities via Power Automate. This setup provides a comprehensive solution for both user interaction and backend processing.
 
 1. Azure Web App:
-   •	Role: Hosts the main application and serves it to users. It's the front-end component that users interact with through their browsers.
+   - Role: Hosts the main application and serves it to users. It's the front-end component that users interact with through their browsers.
 2. Azure Function App:
-   •	Role: Handles serverless computing tasks such as processing backend logic, API calls, or data transformations. It's triggered by events and scales automatically.
+   - Role: Handles serverless computing tasks such as processing backend logic, API calls, or data transformations. It's triggered by events and scales automatically.
 3. Google Maps JavaScript API:
-   •	Role: Provides map-related functionalities within the application. It allows you to embed interactive maps and access map features.
+   - Role: Provides map-related functionalities within the application. It allows you to embed interactive maps and access map features.
 4. SendGrid API:
-   •	Role: Manages email sending capabilities. Used for sending transactional or notification emails from the application.
+   - Role: Manages email sending capabilities. Used for sending transactional or notification emails from the application.
 5. Power Automate:
-   •	Role: Automates workflows and integrates with other services. In this case, it's used to send prompts to ChatGPT via OpenAI.
+   - Role: Automates workflows and integrates with other services. In this case, it's used to send prompts to ChatGPT via OpenAI.
 6. OpenAI (ChatGPT):
-   •	Role: Provides conversational AI capabilities. ChatGPT processes prompts sent via Power Automate to generate responses or handle user queries.
+   - Role: Provides conversational AI capabilities. ChatGPT processes prompts sent via Power Automate to generate responses or handle user queries.
 7. Twilio:
-   •	Role: Provides SMS notification capabilities. Twilio send the notification via Power Automate to notify user.
+   - Role: Provides SMS notification capabilities. Twilio send the notification via Power Automate to notify user.
    
 ### Resource Types and Their Roles
-   •	Maps JavaScript API Key: Authentication key for using Google Maps JavaScript API.
-   •	SendGrid API Key: Authentication key for sending emails via SendGrid.
-   •	Power Automate: Service used to automate workflows and integrate with external APIs like OpenAI's ChatGPT.
-   •	Twilio API Key: Authentication key for using Twilio's SMS services.
+1. Maps JavaScript API Key: Authentication key for using Google Maps JavaScript API.
+2. SendGrid API Key: Authentication key for sending emails via SendGrid.
+3. Power Automate: Service used to automate workflows and integrate with external APIs like OpenAI's ChatGPT.
+4. Twilio API Key: Authentication key for using Twilio's SMS services.
    
 ### Setup
 1.	Pre-Requisites:
-   o	Ensure Google Maps JavaScript API key, Azure Web App, Azure Function App, SendGrid API, Twilio, and Power Automate are properly set up.
-   o	Confirm the Maps API Key Restrictions and make sure they are correctly configured for the Maps JavaScript API, Places API, and Geocoding API.
+   - Ensure Google Maps JavaScript API key, Azure Web App, Azure Function App, SendGrid API, Twilio, and Power Automate are properly set up.
+   - Confirm the Maps API Key Restrictions and make sure they are correctly configured for the Maps JavaScript API, Places API, and Geocoding API.
 2.	Keys and Parameters:
-   o	Maps JavaScript API: Include your API key and any restrictions or configurations.
-   o	SendGrid API: Include your SendGrid API key and configure your authenticated email address.
-   o	OpenAI API: Ensure you have an API key for OpenAI if required by Power Automate to send prompts to ChatGPT.
+   - Maps JavaScript API: Include your API key and any restrictions or configurations.
+   - SendGrid API: Include your SendGrid API key and configure your authenticated email address.
+   - OpenAI API: Ensure you have an API key for OpenAI if required by Power Automate to send prompts to ChatGPT.
 3.	Deployment:
-   o	Follow deployment instructions specific to Azure Web App and any other deployment targets.
+   - Follow deployment instructions specific to Azure Web App and any other deployment targets.
 6.	Power Automate Setup:
-   o	Configure Power Automate to connect with OpenAI's ChatGPT for sending and receiving prompts. Ensure that all necessary connections and       triggers are set up.
-  	o	Configure Power Automate to connect with twilio
+   - Configure Power Automate to connect with OpenAI's ChatGPT for sending and receiving prompts. Ensure that all necessary connections and       triggers are set up.
+   - Configure Power Automate to connect with twilio
 
 ![Early Warning System AI](Early%20Warning%20System%20AI.png)
 
